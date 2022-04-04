@@ -1,48 +1,48 @@
-# MayStreet Workbench Neo Data Lake Springboard
+# MayStreet Analytics Workbench Data Lake Springboard
 
 ## Welcome
 
 Welcome to the Data Lake Springboard
 
-This Springboard provides a full set of example queries that can run inside Workbench Neo and retrieve data
+This Springboard provides a full set of example queries that can run inside Analytics Workbench and retrieve data
 from our Data Lake platform.
 
-We provide multiple JupyterLab Notebooks full of example queries you may open and run inside Workbench Neo; please
-consult the rest of this document for a brief introduction to each Notebook.
+MayStreet provides multiple JupyterLab notebooks full of example queries you may open and run inside Analytics Workbench; please
+consult the rest of this document for a brief introduction to each notebook.
 
-Feel free to copy the code from our Notebooks into your own Notebook, or play around with the existing Notebook.
+Feel free to copy the code from our notebooks into your own notebook, or play around with the existing notebook.
 This is a completely isolated copy which will stay in your own secured Workbench file system, so you're more than
 welcome to tinker with it as much as you'd like!
 
-If you'd like to make a copy of the Notebook with a different name, select `File` -> `Save As...` to save the Notebook
+If you'd like to make a copy of the notebook with a different name, select `File` -> `Save As...` to save the notebook
 with a new name.
 
 ## Notebooks
 
 ### _[data-lake-introduction.ipynb](data-lake-introduction.ipynb)_
 
-This Notebook will provide a very simple query that can be run to retrieve data from our Data Lake and show it
-inside the Notebook output.
+This notebook will provide a very simple query that can be run to retrieve data from our Data Lake and show it
+inside the notebook output.
 
-To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+To run this notebook, simply open it, and click the "Run All" button in the top toolbar.
 
 ### _[visualising-data-lake-output.ipynb](visualising-data-lake-output.ipynb)_
 
-This Notebook will retrieve AAPL data grouped by feed for the 07th January 2022, and display the output on a very
+This notebook will retrieve AAPL data grouped by feed for the 07th January 2022, and display the output on a very
 simple 2D graph.
 
-To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+To run this notebook, simply open it, and click the "Run All" button in the top toolbar.
 
 ### _[distributed-data-lake-queries-to-graph.ipynb](distributed-data-lake-queries-to-graph.ipynb)_
 
-This complicated Notebook will invoke Data Lake queries throughout a distributed Dask cluster, and will then
+This complicated notebook will invoke Data Lake queries throughout a distributed Dask cluster, and will then
 collect the response and create an example 3D graph.
 
 You will need to create a Dask cluster before you can run this sample; to do so, please follow the short video
 here:
 ![images/provisioning-cluster.gif](/images/provisioning-cluster.gif)
 
-Once the Dask cluster has moved to the provisioning state, update the address of the cluster inside the Notebook;
+Once the Dask cluster has moved to the provisioning state, update the address of the cluster inside the notebook;
 change the following line:
 
 `cluster_client = Client("tcp://10.0.0.44:8786")`
@@ -56,21 +56,21 @@ to run each of the cells in turn.
 
 ### _[price-correlation.ipynb](price-correlation.ipynb)_
 
-This Notebook fetches the average price of AAPL and TSLA on a given day, calculates the correlation matrix and plots a chart showing the correlation on that day.
+This notebook fetches the average price of AAPL and TSLA on a given day, calculates the correlation matrix and plots a chart showing the correlation on that day.
 
-To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+To run this notebook, simply open it, and click the "Run All" button in the top toolbar.
 
 ### _[multidimensional-chart.ipynb](multidimensional-chart.ipynb)_
 
-This Notebook fetches all AAPL trades on a given day, and plots each trade time, quantity and price on a 3d chart.
+This notebook fetches all AAPL trades on a given day, and plots each trade time, quantity and price on a 3d chart.
 
-To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+To run this notebook, simply open it, and click the "Run All" button in the top toolbar.
 
 ### _[hourly-price-band.ipynb](hourly-price-band.ipynb)_
 
-This Notebook creates a chart of the min and max prices of AAPL trades for each hour on a given day.
+This notebook creates a chart of the min and max prices of AAPL trades for each hour on a given day.
 
-To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+To run this notebook, simply open it, and click the "Run All" button in the top toolbar.
 
 ## Scripts
 
