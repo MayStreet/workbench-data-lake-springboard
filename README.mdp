@@ -82,6 +82,16 @@ It can run either in a Dask cluster as a scheduled job, or it can be launched fr
 
 Note that the files will be empty if the market was closed the previous day.
 
+### _[extract-opra-snapshots.py](extract-opra-snapshots.py)_
+
+This Python script shows how to download 1 minute trade snapshots for all options based on an underlying, e.g. all options on SPY published on OPRA.
+
+### _[extract-top-n-levels.py](extract-top-n-levels.py)_
+
+This Python script shows how to download the top N levels from a market data feed. It also uploads the results to an S3 bucket. Change the `AWS_*` variables to make it point to your own bucket.
+
+Before running this script, you need to install the `boto3` library. You can do so by opening a terminal (press `F1` and type the `Python: Create Terminal` command), and inserting the `pip install boto3` command.
+
 ## Support
 
 For support, please email <support@maystreet.com>. Thank you.
