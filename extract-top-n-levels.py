@@ -91,9 +91,7 @@ def fetch_rows(product):
         "prod_lake"."p_mst_data_lake".mt_aggregated_price_update
     WHERE
         f = '{MARKET_DATA_FEED}'
-        AND y = '{DATE.year}'
-        AND m = '{str(DATE.month).rjust(2, '0')}'
-        AND d = '{str(DATE.day).rjust(2, '0')}'
+        AND dt = '{DATE.isoformat()}'
         AND product = '{product}'
     ORDER BY
         lastreceipttimestamp

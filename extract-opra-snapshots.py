@@ -36,7 +36,7 @@ def fetch_rows(product):
                     "prod_lake"."p_mst_data_lake"."mt_trade"
                 WHERE
                     f = '{MARKET_DATA_FEED}'
-                    AND dt = '{str(DATE)}'
+                    AND dt = '{DATE.isoformat()}'
                     AND product LIKE '{product}%'
             ),
             price_and_time AS (
@@ -59,7 +59,7 @@ def fetch_rows(product):
                 JOIN
             price_and_time USING (SequenceNumber, Product)
         WHERE
-            dt = '{str(DATE)}'
+            dt = '{DATE.isoformat()}'
         ORDER BY
             dp_minute
     """
