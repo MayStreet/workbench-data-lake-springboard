@@ -40,7 +40,7 @@ collect the response and create an example 3D graph.
 
 You will need to create a Dask cluster before you can run this sample; to do so, please follow the short video
 here:
-![images/provisioning-cluster.gif](/images/provisioning-cluster.gif)
+![images/provisioning-cluster.gif](images/provisioning-cluster.gif)
 
 Once the Dask cluster has moved to the provisioning state, update the address of the cluster inside the notebook;
 change the following line:
