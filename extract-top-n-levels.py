@@ -28,6 +28,8 @@ NUM_LEVELS = 5
 
 ## Day that we will fetch data for
 DATE = datetime.date.today() - datetime.timedelta(days=20)
+# if it's a weekend, use the previous Friday
+DATE = DATE - datetime.timedelta(days=max(0, DATE.weekday() - 4))
 
 ## The S3 bucket where you want to upload results to. This is the simple bucket name, without the "s3://" prefix.
 ## If you don't have a bucket, you can create one integrated with the Analytics Workbench from the launcher.

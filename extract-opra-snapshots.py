@@ -20,6 +20,8 @@ MARKET_DATA_FEED = "opra"
 
 ## Day that we will fetch data for
 DATE = datetime.date.today() - datetime.timedelta(days=20)
+# if it's a weekend, use the previous Friday
+DATE = DATE - datetime.timedelta(days=max(0, DATE.weekday() - 4))
 
 
 def fetch_rows(product):
