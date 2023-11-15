@@ -45,11 +45,11 @@ def fetch_rows(product):
                 SELECT
                     MAX(SequenceNumber) SequenceNumber,
                     Product,
-                    DATE_TRUNC('minute', TO_TIMESTAMP(ExchangeTimestamp / 1000000000)) AS dp_minute
+                    DATE_TRUNC('minute', FROM_UNIXTIME(ExchangeTimestamp / 1000000000)) AS dp_minute
                 FROM
                     lake
                 GROUP BY
-                    DATE_TRUNC('minute', TO_TIMESTAMP(ExchangeTimestamp / 1000000000)),
+                    DATE_TRUNC('minute', FROM_UNIXTIME(ExchangeTimestamp / 1000000000)),
                     product,
                     dt
             )
