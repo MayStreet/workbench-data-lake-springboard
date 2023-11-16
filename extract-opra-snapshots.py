@@ -33,7 +33,7 @@ def fetch_rows(product):
         WITH
             lake AS (
                 SELECT
-                    *
+                    exchangetimestamp, sequencenumber, dt, product, price, quantity, side, tradevolume
                 FROM
                     "prod_lake"."p_mst_data_lake"."mt_trade"
                 WHERE
