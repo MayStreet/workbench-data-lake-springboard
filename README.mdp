@@ -72,6 +72,12 @@ This notebook creates a chart of the min and max prices of AAPL trades for each 
 
 To run this notebook, simply open it, and click the "Run All" button in the top toolbar.
 
+### _[timestamps-tutorial.ipynb](timestamps-tutorial.ipynb)_
+
+This notebook explains how to work with timestamps in the Data Lake.
+
+To run this notebook, simply open it, and click the "Run All" button in the top toolbar.
+
 ## Scripts
 
 ### _[custom-export.py](custom-export.py)_
