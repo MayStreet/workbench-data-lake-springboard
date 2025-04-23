@@ -78,6 +78,11 @@ This notebook explains how to work with timestamps in the Data Lake.
 
 To run this notebook, simply open it, and click the "Run All" button in the top toolbar.
 
+### _[user-defined-tables.ipynb](user-defined-tables.ipynb)_
+
+This notebook contains examples of how to use User Defined Tables (UDTs). UDTs allow you to upload your own data
+into the data lake, and combine it with data from other data lake sources.
+
 ## Scripts
 
 ### _[custom-export.py](custom-export.py)_
